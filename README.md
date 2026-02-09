@@ -6,6 +6,11 @@ This project aims to provide a toolkit for efficiently splitting the Google Pate
 
 Google Patents data consists of a large volume of patent documents stored in JSON format. These files can be quite large, making it challenging to process them in their entirety. Our splitting tool allows users to break these files into smaller segments, facilitating easier analysis and processing.
 
+SplitGoogleJson provides two parsers for handling large JSON datasets:
+
+- **Patent Parser** (`patent_parser.py`): Extracts patent information from "patents-public-data.patents.publications", including IPC codes, citations, titles, abstracts, assignees, examiners, inventors, and child patents
+- **Research Data Parser** (`researchdata_parser.py`): Processes patent research data from "patents-public-data.patents.google_patents_research", including embeddings and top terms.
+
 ## Features
 - **Customizable Splitting**: Users can specify the size of the chunks they want to create from the original JSON file.
 - **Batch Processing**: The tool allows batch processing of multiple JSON files at once.
