@@ -1,39 +1,25 @@
-# SplitGoogleJson
+# Splitting Google Patent Public Data JSON Files
+
+This project aims to provide a toolkit for efficiently splitting the Google Patent public data JSON files into smaller, manageable chunks. Google Patents offer a wealth of information in JSON format, which can be extensive and cumbersome to handle in one go. 
 
 ## Overview
 
-This repository includes scripts for parsing patent data and research data from Google JSON format.
+Google Patents data consists of a large volume of patent documents stored in JSON format. These files can be quite large, making it challenging to process them in their entirety. Our splitting tool allows users to break these files into smaller segments, facilitating easier analysis and processing.
 
-## Usage
+## Features
+- **Customizable Splitting**: Users can specify the size of the chunks they want to create from the original JSON file.
+- **Batch Processing**: The tool allows batch processing of multiple JSON files at once.
+- **Easy Integration**: The split files will maintain their structure, ensuring that no data is lost during the process.
+- **User-friendly Interface**: Instructions and logs are included to guide users through the splitting process.
 
-### Patent Parser
+## How to Use
+1. Clone the repository: `git clone <repository_url>`
+2. Navigate to the project directory: `cd SplitGoogleJson`
+3. Run the script and specify the JSON file you want to split along with any additional parameters.
+4. Check the output directory for the split files.
 
-```python
-from patent_parser import PatentParser
-
-parser = PatentParser()
-results = parser.parse("path_to_patent_json")
-print(results)
-```
-
-### Research Data Parser
-
-```python
-from researchdata_parser import ResearchDataParser
-
-parser = ResearchDataParser()
-results = parser.parse("path_to_researchdata_json")
-print(results)
-```
-
-## Installation
-
-To install the required packages, use:
-
-```bash
-pip install -r requirements.txt
-```
+## Contributions
+Contributions to improve the tool or add more features are welcome! Please open an issue for discussion or submit a pull request.
 
 ## License
-
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
