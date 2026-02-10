@@ -26,6 +26,7 @@ SplitGoogleJson provides two parsers for handling large JSON datasets:
 ## Known Issues & Future Work
 
 1. **Primary IPC Extraction**: The IPC sequence is now random, and the first IPC is not the main IPC. We are planning to implement a primary IPC extraction feature to enhance the functionality of the project.
+2. The inventor.txt and assignee.txt will be re-exacted using the unique key of publication number.
 
 ## Contributions
 Contributions to improve the tool or add more features are welcome! Please open an issue for discussion or submit a pull request.
